@@ -46,6 +46,8 @@ public class Peitemsactions extends HttpServlet {
 		  request.setCharacterEncoding("utf-8");
 		  response.setCharacterEncoding("utf-8");
 		  String m=request.getParameter("m");
+		  System.out.println("11");
+		  System.out.println("11");
 		   try {
 			   Method method=this.getClass().getDeclaredMethod(m,HttpServletRequest.class,HttpServletResponse.class);
 			method.invoke(this,request,response);
